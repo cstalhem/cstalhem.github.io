@@ -1,6 +1,8 @@
 site_name: Personal blog
 site_description: My personal blog to keep track of my thoughts and ideas.
-site_url: https://www.example.com
+site_url: https://cstalhem.github.io
+
+repo_url: https://github.com/cstalhem/cstalhem.github.io
 
 theme:
   name: material
