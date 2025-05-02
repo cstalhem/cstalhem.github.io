@@ -1,0 +1,36 @@
+# MkDocs build output
+/site/
+
+# Python virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Development environment files
+.env
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Dependency management
+.uv/
+
+# MkDocs generated files
+/assets/
+
+# Log files
+*.log
+
+# Package distribution
+dist/
+build/
+*.egg-info/
