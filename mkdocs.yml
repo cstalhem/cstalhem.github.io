@@ -8,9 +8,9 @@ theme:
     - navigation.path
     - navigation.prune
   icon:
-    repo: fontawesome/brands/git-alt
-  repo_url: https://github.com/cstalhem/cstalhem.github.io
-  repo_name: cstalhem/cstalhem.github.io
+    repo: fontawesome/brands/github
+
+repo_url: https://github.com/cstalhem/cstalhem.github.io
 
 markdown_extensions:
   - def_list
