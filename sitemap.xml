@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://cstalhem.github.io/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://cstalhem.github.io/category/blogging/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://cstalhem.github.io/category/homelab/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://cstalhem.github.io/2025/05/01/blogging-with-mkdocs/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://cstalhem.github.io/2025/05/06/pihole-dns-and-nice-urls-with-traefik/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://cstalhem.github.io/archive/2025/05/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+</urlset>
