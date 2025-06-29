@@ -26,7 +26,7 @@ collections:
     folder: content/posts
     create: true
     path: "{{year}}/{{month}}/{{slug}}"
-    slug: "{{year}}/{{month}}/{{slug}}"
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Draft", name: "draft", widget: "boolean", default: true }
