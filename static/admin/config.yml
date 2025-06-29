@@ -3,6 +3,7 @@ backend:
   repo: cstalhem/cstalhem.github.io
   branch: main
   use_graphql: true
+  base_url: https://sveltia-cms-auth.carl-649.workers.dev/
 
 # These settings are required for Decap CMS to work properly
 site_url: https://cstalhem.github.io
