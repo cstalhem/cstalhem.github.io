@@ -45,7 +45,13 @@ collections:
           modes: [raw, rich_text],
           required: true,
         }
-      - { label: "Tags", name: "tags", widget: "list", allow_add: true }
+      - {
+          label: "Tags",
+          name: "tags",
+          widget: "list",
+          allow_add: true,
+          required: false,
+        }
 #     create: true
 #     slug: "{{year}}/{{month}}/{{slug}}"
 #     summary: "{{title}} ({{date}})"
