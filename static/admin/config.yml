@@ -1,0 +1,78 @@
+backend:
+  name: github
+  repo: cstalhem/cstalhem.github.io
+  branch: main
+  use_graphql: true
+
+# These settings are required for Decap CMS to work properly
+site_url: https://cstalhem.github.io
+display_url: https://cstalhem.github.io
+
+media_folder: static/images
+public_folder: /images
+
+locale: en
+search: false
+slug:
+  encoding: "unicode"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: posts
+    label: Blog Posts
+    label_singular: Post
+    folder: content/posts
+    create: true
+    path: "{{year}}/{{month}}/{{slug}}"
+    slug: "{{year}}/{{month}}/{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Draft", name: "draft", widget: "boolean", default: true }
+      - { label: "Date", name: "date", widget: "datetime", required: true }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "list",
+          required: true,
+          max: 1,
+        }
+      - {
+          label: "Body",
+          name: "body",
+          widget: "markdown",
+          modes: [raw, rich_text],
+          required: true,
+        }
+      - { label: "Tags", name: "tags", widget: "list", allow_add: true }
+#     create: true
+#     slug: "{{year}}/{{month}}/{{slug}}"
+#     summary: "{{title}} ({{date}})"
+#     sortable_fields:
+#       fields: [date, title]
+#       default:
+#         field: date
+#         direction: descending
+#     fields:
+#       - { label: "Title", name: "title", widget: "string", required: true }
+#       - { label: "Date", name: "date", widget: "datetime", required: true }
+#       - { label: "Draft", name: "draft", widget: "boolean", default: true }
+#       - {
+#           label: "Categories",
+#           name: "categories",
+#           widget: "list",
+#           required: false,
+#         }
+#       - { label: "Tags", name: "tags", widget: "list", required: false }
+#       - { label: "Body", name: "body", widget: "markdown", required: true }
+
+#   - name: pages
+#     label: Pages
+#     label_singular: Page
+#     files:
+#       - name: about
+#         label: About
+#         file: content/about.md
+#         fields:
+#           - { label: "Title", name: "title", widget: "string" }
+#           - { label: "Body", name: "body", widget: "markdown" }
