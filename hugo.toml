@@ -2,3 +2,23 @@ baseURL = 'https://cstalhem.github.io'
 languageCode = 'en-us'
 title = 'My Personal Blog'
 theme = "PaperMod"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+
+[params]
+  description = "A blog to keep track of things i do, learn, and want to remember"
+
+[permalinks]
+  posts = "/posts/:year/:month/:slug"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
