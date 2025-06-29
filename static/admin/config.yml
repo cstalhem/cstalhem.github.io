@@ -23,10 +23,10 @@ collections:
   - name: posts
     label: Blog Posts
     label_singular: Post
-    folder: content/posts
     create: true
-    path: "{{year}}/{{month}}/{{slug}}"
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    folder: content/posts
+    path: "{{year}}/{{month}}/{{day}}/index"
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Draft", name: "draft", widget: "boolean", default: true }
