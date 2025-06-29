@@ -1,15 +1,16 @@
 ---
 title: PiHole, DNS and nice URLs with Traefik
 date: 2025-05-06T11:36:00
-draft: true
+draft: false
 categories:
   - homelab
 tags:
   - dns
   - pi-hole
-thumbnail: ''
-description: ''
+thumbnail: ""
+description: ""
 ---
+
 ## Background
 
 I have been wanting to setup a Pi-Hole on my HomeLab for a while now and I finally got around to doing it.
@@ -32,7 +33,7 @@ Initially I set up this flow:
 
 graph LR
 
-  A[Client] --> D[Router] --> B[Pi-Hole] --> C[Bind9] --> E[Internet]
+A[Client] --> D[Router] --> B[Pi-Hole] --> C[Bind9] --> E[Internet]
 
 \`\`\`
 
@@ -42,7 +43,7 @@ However, this caused issues since I am running Traefik on my Raspberry Pi. Traef
 
 graph LR
 
-  Client --> Router --> Bind9 --> Pi-Hole --> Internet
+Client --> Router --> Bind9 --> Pi-Hole --> Internet
 
 \`\`\`
 
