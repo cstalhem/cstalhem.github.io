@@ -35,15 +35,11 @@ collections:
       - {
           label: "Categories",
           name: "categories",
-          widget: "list",
-          required: true,
-          max: 1,
-        }
-      - {
-          label: "Body",
-          name: "body",
-          widget: "markdown",
-          modes: [raw, rich_text],
+          widget: "relation",
+          collection: "categories",
+          search_fields: [name],
+          value_field: name,
+          display_fields: [name],
           required: true,
         }
       - {
@@ -57,6 +53,13 @@ collections:
           multiple: true,
           required: false,
         }
+      - {
+          label: "Body",
+          name: "body",
+          widget: "markdown",
+          modes: [raw, rich_text],
+          required: true,
+        }
   - name: "tags"
     label: "Tags"
     label_singular: "Tag"
@@ -65,34 +68,11 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
-#     create: true
-#     slug: "{{year}}/{{month}}/{{slug}}"
-#     summary: "{{title}} ({{date}})"
-#     sortable_fields:
-#       fields: [date, title]
-#       default:
-#         field: date
-#         direction: descending
-#     fields:
-#       - { label: "Title", name: "title", widget: "string", required: true }
-#       - { label: "Date", name: "date", widget: "datetime", required: true }
-#       - { label: "Draft", name: "draft", widget: "boolean", default: true }
-#       - {
-#           label: "Categories",
-#           name: "categories",
-#           widget: "list",
-#           required: false,
-#         }
-#       - { label: "Tags", name: "tags", widget: "list", required: false }
-#       - { label: "Body", name: "body", widget: "markdown", required: true }
-
-#   - name: pages
-#     label: Pages
-#     label_singular: Page
-#     files:
-#       - name: about
-#         label: About
-#         file: content/about.md
-#         fields:
-#           - { label: "Title", name: "title", widget: "string" }
-#           - { label: "Body", name: "body", widget: "markdown" }
+  - name: "categories"
+    label: "Categories"
+    label_singular: "Category"
+    create: true
+    folder: content/categories
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
