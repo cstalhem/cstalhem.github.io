@@ -72,4 +72,30 @@ The current config I have can be found here:
 
 ## Issues along the way
 
-* Posts not being built properly (slug/path mismatch?)
+**Posts not being built properly**
+Initially, my posts we not being built properly and I was unable to understand why. After a while I decided to use Claude Code to try to figure it out, which was great. It analysed the codebase and the docs (using the Context7 MCP and web search) and figured out that I had an issue with the `slug` and `path` setting in my Decap CMS config file. Once I got rid of the `slug` setting completely (and included it in the `path` instead), everything worked perfectly.
+
+**Setting up Tags and Categories**
+Each of my posts currently can accept a single category and multiple number of tasks. In order to get a nice auto-complete for these (to make it simpler to use and prevent typos from creating duplicate tags), I had to setup these as their own Collections in Decap CMS. I then had to use a `relation` widget to refer to them in the Posts collection.
+
+Here is an example of my Tags collection:
+
+```yaml
+- name: "tags"
+  label: "Tags"
+  label_singular: "Tag"
+  create: true
+  folder: content/tags
+  path: "{{slug}}"
+  fields:
+    - { label: "Name", name: "name", widget: "string" }
+```
+
+This caused another problem though. Each time I created a new tag or category, these were shown on the home page, but without any content (as I currently only have a `name` property). In order to fix it, I had to add this to my `hugo.yaml` config:
+
+```yaml
+params:
+  mainSections: ["posts"]
+```
+
+The last fix was discovered by Claude Code on it's own once I asked it to analyse my code and try to fix this by using the relevant parts of the Hugo docs.
