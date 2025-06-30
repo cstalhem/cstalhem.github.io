@@ -1,0 +1,16 @@
+/* ======= Imports ======= */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
+
+/* ======= Font styles ======= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
