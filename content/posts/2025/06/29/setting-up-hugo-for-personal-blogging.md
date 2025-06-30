@@ -3,13 +3,14 @@ title: Setting up Hugo for personal blogging
 draft: false
 date: 2025-06-29T22:46:00.000Z
 summary: Description of how I set up my new blog. Migrating from MkDocs to Hugo.
+categories: ["Homelab"]
 toc: true
 readTime: true
-categories: Homelab
 tags:
   - Blog
 showTags: true
 ---
+
 I decided I wanted something different than MkDocs to run my blog, mainly because I did not like the look of the theme I was using with MkDocs, but I also wanted a proper CMS so that I didn't have to worry about placing and naming files correctly myself.
 
 Below is a breakdown of the process.
@@ -39,9 +40,11 @@ git checkout -b hugo-migration
 The rest turned out to be relatively straightforward.
 
 #### Clean out everything in the repo that is not Git related
+
 I did this manually by just `rm -r [folder-name]` or `rm [file-names]` to keep it simple.
 
 #### Install Hugo on my machine
+
 Since I'm on a Mac, using homebrew is the simplest solution:
 
 ```bash
@@ -49,6 +52,7 @@ brew install hugo
 ```
 
 #### Setup a new blog
+
 Run the command below in the directory and everything is setup more or less automatically.
 
 ```bash
@@ -60,6 +64,7 @@ I'd have liked to use the flag `--format yaml` in order to get the config file s
 Installing the PaperMod theme was straightforward by using the [official installation guide](https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-installation/). I used the recommended method of adding a Git submodule.
 
 ### Installing Decap CMS and Authenticating
+
 Again, I followed the official guide, this time from [here](https://decapcms.org/docs/install-decap-cms/).
 
 The thing that took the most time was to setup the authentication based on GitHub. The official guide was not possible to use since I did not want to use Netlify. Sveltia provides a simple guide to set up authentication using Cloudflare instead, using [this repo](https://github.com/sveltia/sveltia-cms-auth).
