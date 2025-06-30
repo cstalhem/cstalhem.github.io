@@ -2,9 +2,9 @@
 title: Setting up Hugo for personal blogging
 draft: false
 date: 2025-06-29T22:46:00.000Z
-categories: Homelab
+categories: map-name-homelab
 tags:
-  - Blog
+  - map-name-blog
 ---
 I decided I wanted something different than MkDocs to run my blog, mainly because I did not like the look of the theme I was using with MkDocs, but I also wanted a proper CMS so that I didn't have to worry about placing and naming files correctly myself.
 
@@ -16,7 +16,7 @@ The initial work was simply to select which other engine I'd like to switch to. 
 
 I asked for an engine that was mature, would let me select themes and have a CMS so that I don't have to work with manually moving and naming files in a hierarchy. I also wanted to be able to host it on GitHub pages since that is free and simple, and won't require me to open any of my HomeLab services to the internet.
 
-The recommendations came back as either [11ty](https://www.11ty.dev) or [Hugo](https://gohugo.io).
+The recommendations came back as either [11ty](https://www.11ty.dev) or [Hugo](https://gohugo.io), and to use either Sveltia or DecapCMS. I initially went with Sveltia, but hav switched multiple times since it's a one-line modification to the docs to do it and they are interchangeable.
 
 I also got a complete migration guide together with a checklist.
 
@@ -45,15 +45,31 @@ brew install hugo
 ```
 
 #### Setup a new blog
-Simply run `hugo new site .` in the directory
+Run the command below in the directory and everything is setup more or less automatically.
 
+```bash
+hugo new site .
+```
 
+I'd have liked to use the flag `--format yaml` in order to get the config file setup in YAML format directly. I switched this later to yaml manually by creating a new hugo.yaml file next to the toml one and converting the syntax.
+
+Installing the PaperMod theme was straightforward by using the [official installation guide](https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-installation/). I used the recommended method of adding a Git submodule.
 
 ### Installing Decap CMS and Authenticating
+Again, I followed the official guide, this time from [here](https://decapcms.org/docs/install-decap-cms/).
 
-### Configuring Hugo & PaperMod
+The thing that took the most time was to setup the authentication based on GitHub. The official guide was not possible to use since I did not want to use Netlify. Sveltia provides a simple guide to set up authentication using Cloudflare instead, using [this repo](https://github.com/sveltia/sveltia-cms-auth).
+
+I followed that process, but instead of using an OAuth app, I switched to a regular GitHub App based on the information in [this issue](https://github.com/sveltia/sveltia-cms-auth/issues/15).
+I initially used the wrong fields to set my variables in the Cloudflare so it did not work properly on the first go.
+
+### Configuring Hugo, PaperMod and Decap CMS
+
+The current config I have can be found here:
+
+- Hugo/PaperMod: [hugo.yaml](https://github.com/cstalhem/cstalhem.github.io/blob/6a3d833636bc1b54b60b0e326636a772ac1d0a2b/hugo.yaml)
+- Decap CMS: [config.yaml](https://github.com/cstalhem/cstalhem.github.io/blob/6a3d833636bc1b54b60b0e326636a772ac1d0a2b/static/admin/config.yml)
 
 ## Issues along the way
 
-* Setting up GitHub App instead of OAuth App for better scoping of permissions
 * Posts not being built properly (slug/path mismatch?)
