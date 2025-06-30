@@ -18,8 +18,25 @@ menu:
       url: "/tags/"
       weight: 3
 
+summaryLength: 150
+rssLimit: 20
+
 params:
+  author: "Calle Stålhem"
   description: "A blog to keep track of things i do, learn, and want to remember"
+  keywords: ["blog", "personal", "technology", "learning"]
+  DateFormat: "January 2, 2006"
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  defaultTheme: "auto"
+
+markup:
+  highlight:
+    style: "github"
+    lineNos: true
+    codeFences: true
 
 permalinks:
   posts: "/posts/:year/:month/:day/:slug"
