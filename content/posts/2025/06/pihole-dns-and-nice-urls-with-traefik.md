@@ -29,23 +29,23 @@ I had a few considerations that I needed to account for:
 
 Initially I set up this flow:
 
-\`\`\`mermaid
+```mermaid
 
 graph LR
 
 A[Client] --> D[Router] --> B[Pi-Hole] --> C[Bind9] --> E[Internet]
 
-\`\`\`
+```
 
 However, this caused issues since I am running Traefik on my Raspberry Pi. Traefik uses Cloudflare and Let's Encrypt to issue certificates and therefore allow HTTPS-traffic to the services it has configured. Routing requests via the Pi-Hole changed the DNS-lookup chain, which made the certificates invalid. I therefore had to switch the order around to this:
 
-\`\`\`mermaid
+```mermaid
 
 graph LR
 
 Client --> Router --> Bind9 --> Pi-Hole --> Internet
 
-\`\`\`
+```
 
 Bind9 is configured to use the Pi-Hole as the only upstream DNS, so any requests that are not to local services are forwarded there.
 
