@@ -39,23 +39,25 @@ collections:
         }
       - { label: "Summary", name: "summary", widget: "string", required: false }
       - {
-          label: "Description",
-          name: "description",
-          widget: "string",
+          label: "toc",
+          name: "toc",
+          widget: "boolean",
+          default: true,
           required: false,
         }
-      - { label: "toc", name: "toc", widget: "boolean", default: true }
       - {
           label: "Read time",
           name: "readTime",
           widget: "boolean",
           default: true,
+          required: false,
         }
       - {
           label: "Auto Number",
           name: "autonumber",
           widget: "boolean",
-          default: true,
+          default: false,
+          required: false,
         }
       - {
           label: "Hide Back to top button",
@@ -87,8 +89,9 @@ collections:
       - {
           label: "Show tags",
           name: "showTags",
-          widget: "hidden",
+          widget: "boolean",
           default: true,
+          required: false,
         }
       - {
           label: "Body",
