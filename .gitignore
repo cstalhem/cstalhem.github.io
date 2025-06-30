@@ -32,9 +32,6 @@ __pycache__/
 # Dependency management
 .uv/
 
-# MkDocs generated files
-/assets/
-
 # Log files
 *.log
 

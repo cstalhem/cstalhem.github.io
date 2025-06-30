@@ -35,9 +35,10 @@ params:
 
 markup:
   highlight:
-    style: "github"
+    style: "catppuccin-mocha"
     lineNos: true
     codeFences: true
+    noClasses: false # Required to make sure background renders properly while lineNos: true
 
 permalinks:
   posts: "/posts/:year/:month/:day/:slug"
