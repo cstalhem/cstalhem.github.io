@@ -25,8 +25,7 @@ collections:
     label_singular: Post
     create: true
     folder: content/posts
-    path: "{{year}}/{{month}}/{{day}}/index"
-    slug: "{{slug}}"
+    path: "{{year}}/{{month}}/{{day}}/{{slug}}"
     summary: "{{title}} - {{date}}"
     fields:
       - { label: "Title", name: "title", widget: "string", required: true }
@@ -65,7 +64,7 @@ collections:
     label_singular: "Tag"
     create: true
     folder: content/tags
-    slug: "{{slug}}"
+    path: "{{slug}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
   - name: "categories"
@@ -73,6 +72,6 @@ collections:
     label_singular: "Category"
     create: true
     folder: content/categories
-    slug: "{{slug}}"
+    path: "{{slug}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
