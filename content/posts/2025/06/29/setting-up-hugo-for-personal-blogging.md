@@ -3,9 +3,12 @@ title: Setting up Hugo for personal blogging
 draft: false
 date: 2025-06-29T22:46:00.000Z
 summary: Description of how I set up my new blog. Migrating from MkDocs to Hugo.
-categories: map-name-homelab
+toc: true
+readTime: true
+categories: Homelab
 tags:
-  - map-name-blog
+  - Blog
+showTags: true
 ---
 I decided I wanted something different than MkDocs to run my blog, mainly because I did not like the look of the theme I was using with MkDocs, but I also wanted a proper CMS so that I didn't have to worry about placing and naming files correctly myself.
 
