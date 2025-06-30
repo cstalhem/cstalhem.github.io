@@ -71,7 +71,7 @@ collections:
           widget: "relation",
           collection: "categories",
           search_fields: ["name"],
-          value_field: "{{slug}}",
+          value_field: "name",
           display_fields: ["name"],
           required: true,
         }
@@ -81,7 +81,7 @@ collections:
           widget: "relation",
           collection: "tags",
           search_fields: ["name"],
-          value_field: "{{slug}}",
+          value_field: "name",
           display_fields: ["name"],
           multiple: true,
           required: false,
@@ -105,7 +105,7 @@ collections:
     label_singular: "Tag"
     create: true
     folder: content/tags
-    path: "{{slug}}"
+    path: "{{name}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
   - name: "categories"
@@ -113,6 +113,6 @@ collections:
     label_singular: "Category"
     create: true
     folder: content/categories
-    path: "{{slug}}"
+    path: "{{name}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
