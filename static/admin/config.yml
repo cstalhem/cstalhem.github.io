@@ -30,7 +30,39 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Draft", name: "draft", widget: "boolean", default: true }
-      - { label: "Date", name: "date", widget: "datetime", required: true }
+      - {
+          label: "Date",
+          name: "date",
+          widget: "datetime",
+          default: "{{now}}",
+          required: true,
+        }
+      - { label: "Summary", name: "summary", widget: "string", required: false }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "string",
+          required: false,
+        }
+      - { label: "TOC", name: "toc", widget: "hidden", default: true }
+      - {
+          label: "Read time",
+          name: "readTime",
+          widget: "hidden",
+          default: true,
+        }
+      - {
+          label: "Auto Number",
+          name: "autonumber",
+          widget: "hidden",
+          default: true,
+        }
+      - {
+          label: "Hide Back to top button",
+          name: "hideBackToTop",
+          widget: "hidden",
+          default: false,
+        }
       - {
           label: "Categories",
           name: "categories",
@@ -51,6 +83,12 @@ collections:
           display_fields: ["name"],
           multiple: true,
           required: false,
+        }
+      - {
+          label: "Show tags",
+          name: "showTags",
+          widget: "hidden",
+          default: true,
         }
       - {
           label: "Body",
