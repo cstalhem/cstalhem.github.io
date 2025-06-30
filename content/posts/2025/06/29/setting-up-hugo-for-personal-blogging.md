@@ -1,6 +1,6 @@
 ---
 title: Setting up Hugo for personal blogging
-draft: true
+draft: false
 date: 2025-06-29T22:46:00.000Z
 categories: Homelab
 tags:
