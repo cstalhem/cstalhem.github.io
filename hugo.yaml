@@ -5,16 +5,16 @@ theme: "PaperMod"
 
 menu:
   main:
-    - name: "Home"
+    - name: "/~"
       url: "/"
       weight: 1
-    - name: "Posts"
+    - name: "/posts"
       url: "/posts/"
       weight: 2
-    - name: "Categories"
+    - name: "/categories"
       url: "/categories/"
       weight: 3
-    - name: "Tags"
+    - name: "/tags"
       url: "/tags/"
       weight: 3
 
@@ -25,7 +25,6 @@ params:
   author: "Calle Stålhem"
   description: "A blog to keep track of things i do, learn, and want to remember"
   keywords: ["blog", "personal", "technology", "learning"]
-  DateFormat: "January 2, 2006"
   ShowReadingTime: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
