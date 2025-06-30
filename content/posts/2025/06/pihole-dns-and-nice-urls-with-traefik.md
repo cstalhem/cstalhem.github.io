@@ -1,15 +1,18 @@
 ---
+title: PiHole, DNS and nice URLs with Traefik
 draft: false
+date: 2025-05-06T11:36:00
 summary: Configuring my HomeLab to use a Reverse proxy (Traefik) and setting up
   a DNS-based adblocker for the network.
+toc: true
+readTime: true
 thumbnail: ""
-title: PiHole, DNS and nice URLs with Traefik
-date: 2025-05-06T11:36:00
-description: ""
 categories: map-name-homelab
 tags:
   - map-name-dns
   - map-name-pi-hole
+showTags: true
+description: ""
 ---
 
 ## Background
