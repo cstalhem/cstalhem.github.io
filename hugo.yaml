@@ -1,43 +1,41 @@
 baseURL: "https://cstalhem.github.io"
 languageCode: "en-us"
 title: "My Personal Blog"
-theme: "PaperMod"
-
-menu:
-  main:
-    - name: "/~"
-      url: "/"
-      weight: 1
-    - name: "/posts"
-      url: "/posts/"
-      weight: 2
-    - name: "/categories"
-      url: "/categories/"
-      weight: 3
-    - name: "/tags"
-      url: "/tags/"
-      weight: 3
-
-summaryLength: 150
-rssLimit: 20
+theme: "typo"
 
 params:
   author: "Calle Stålhem"
   description: "A blog to keep track of things i do, learn, and want to remember"
-  keywords: ["blog", "personal", "technology", "learning"]
-  ShowReadingTime: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
-  defaultTheme: "auto"
-  mainSections: ["posts"]
+  theme: "auto"
+  colorPalette: "default"
+  homeIntroTitle: ""
+  homeIntroContent: ""
+  homeCollectionTitle: "Posts"
+  homeCollection: "posts"
+  paginationSize: 15
+  listSummaries: false
+  listDateFormat: "2 Jan 2006"
+  breadcrumbs:
+    enabled: true
+    showCurrentPage: false
+    home: "~"
+  menu:
+    - name: "~"
+      url: "/"
+    - name: "posts"
+      url: "/posts/"
+    - name: "categories"
+      url: "/categories/"
+    - name: "tags"
+      url: "/tags/"
 
 markup:
   highlight:
-    style: "catppuccin-mocha"
-    lineNos: true
+    anchorLineNos: false
     codeFences: true
-    noClasses: false # Required to make sure background renders properly while lineNos: true
+    guessSyntax: false
+    noClasses: true
+    style: catppuccin-mocha
 
 permalinks:
   posts: "/posts/:year/:month/:day/:slug"
