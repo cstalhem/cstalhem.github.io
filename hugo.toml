@@ -17,7 +17,7 @@ theme = "PaperMod"
   description = "A blog to keep track of things i do, learn, and want to remember"
 
 [permalinks]
-  posts = "/posts/:year/:month/:slug"
+  posts = "/posts/:year/:month/:day/:slug"
 
 [taxonomies]
   category = "categories"
