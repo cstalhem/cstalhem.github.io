@@ -12,6 +12,12 @@ theme = "PaperMod"
     name = "Posts"
     url = "/posts/"
     weight = 2
+  [[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
 
 [params]
   description = "A blog to keep track of things i do, learn, and want to remember"
