@@ -44,17 +44,17 @@ collections:
           widget: "string",
           required: false,
         }
-      - { label: "TOC", name: "toc", widget: "hidden", default: true }
+      - { label: "toc", name: "toc", widget: "boolean", default: true }
       - {
           label: "Read time",
           name: "readTime",
-          widget: "hidden",
+          widget: "boolean",
           default: true,
         }
       - {
           label: "Auto Number",
           name: "autonumber",
-          widget: "hidden",
+          widget: "boolean",
           default: true,
         }
       - {
