@@ -27,6 +27,7 @@ collections:
     folder: content/posts
     path: "{{year}}/{{month}}/{{day}}/index"
     slug: "{{slug}}"
+    summary: "{{title}} - {{date}}"
     fields:
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Draft", name: "draft", widget: "boolean", default: true }
@@ -48,11 +49,20 @@ collections:
       - {
           label: "Tags",
           name: "tags",
-          widget: "list",
-          allow_add: true,
+          widget: "relation",
+          collection: "tags",
+          search_fields: [name],
+          value_field: "name",
+          display_fields: "name",
           required: false,
-          field: { label: "Tag", name: "tag", widget: "string" },
         }
+  - name: "tags"
+    label_singular: "Tag"
+    create: true
+    folder: content/tags
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
 #     create: true
 #     slug: "{{year}}/{{month}}/{{slug}}"
 #     summary: "{{title}} ({{date}})"
