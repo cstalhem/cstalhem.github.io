@@ -24,6 +24,10 @@ h6 {
   }
 } */
 
+hr.post-header-divider {
+  background-color: var(--code-border);
+}
+
 .toc ul {
   list-style-type: none;
 
