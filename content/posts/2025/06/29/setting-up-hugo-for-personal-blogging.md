@@ -1,7 +1,7 @@
 ---
 title: Setting up Hugo for personal blogging
 draft: false
-date: 2025-06-29T22:46:00.000Z
+date: 2025-06-29T22:46:00
 summary: Description of how I set up my new blog. Migrating from MkDocs to Hugo.
 categories: ["Homelab"]
 toc: true
