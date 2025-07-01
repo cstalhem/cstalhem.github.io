@@ -1,3 +1,0 @@
----
-name: Andrej Karpathy
----
