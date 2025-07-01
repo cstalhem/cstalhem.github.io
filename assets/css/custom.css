@@ -14,3 +14,30 @@ h6 {
   letter-spacing: 0.06em;
   font-weight: 700;
 }
+
+/* ======= Single Post overried styles ======= */
+/* 
+@media screen and (min-width: 1200px) {
+  aside.toc {
+    position: absolute;
+    right: 2em;
+  }
+} */
+
+.toc ul {
+  list-style-type: none;
+
+  > li {
+    margin-left: 0;
+  }
+
+  li > ul {
+    margin-left: 1rem;
+  }
+}
+
+.toc-heading {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-size: 1.75rem;
+}
