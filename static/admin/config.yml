@@ -35,6 +35,8 @@ collections:
           name: "date",
           widget: "datetime",
           default: "{{now}}",
+          format: "YYYY-MM-DDTHH:mm:ss",
+          picker_utc: false,
           required: true,
         }
       - { label: "Summary", name: "summary", widget: "string", required: false }

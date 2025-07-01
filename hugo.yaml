@@ -2,6 +2,7 @@ baseURL: "https://cstalhem.github.io"
 languageCode: "en-us"
 title: "My Personal Blog"
 theme: "typo"
+timeZone: "Europe/Stockholm"
 
 params:
   description: "A blog to keep track of things i do, learn, and want to remember"
