@@ -7,10 +7,11 @@ summary: Configuring my HomeLab to use a Reverse proxy (Traefik) and setting up
 toc: true
 readTime: true
 thumbnail: ""
-categories: ["Homelab"]
+categories: Projects
 tags:
   - dns
   - pi-hole
+  - Homelab
 showTags: true
 description: ""
 ---
