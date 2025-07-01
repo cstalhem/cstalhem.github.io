@@ -2,6 +2,16 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
 
+/* ======= CSS Variables ======= */
+
+:root {
+  --accent-color: rgb(5, 150, 105);
+}
+
+.dark {
+  --accent-color: rgb(34, 197, 133);
+}
+
 /* ======= Font styles ======= */
 
 h1,
@@ -30,18 +40,14 @@ hr.post-header-divider {
 
 .toc ul {
   list-style-type: none;
-
-  > li {
-    margin-left: 0;
-  }
-
-  li > ul {
-    margin-left: 1rem;
-  }
 }
 
-.toc-heading {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 500;
-  font-size: 1.75rem;
+/* ======= Link hover styles ======= */
+
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
 }
