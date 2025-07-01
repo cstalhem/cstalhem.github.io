@@ -25,23 +25,6 @@ h6 {
   font-weight: 700;
 }
 
-/* ======= Single Post overried styles ======= */
-/* 
-@media screen and (min-width: 1200px) {
-  aside.toc {
-    position: absolute;
-    right: 2em;
-  }
-} */
-
-hr.post-header-divider {
-  background-color: var(--code-border);
-}
-
-.toc ul {
-  list-style-type: none;
-}
-
 /* ======= Link hover styles ======= */
 
 a {
@@ -50,4 +33,31 @@ a {
 
 a:hover {
   color: var(--accent-color);
+}
+
+/* ======= Single Post overried styles ======= */
+
+.single-summary {
+  font-size: 1rem;
+}
+
+.single-subsummary {
+  font-size: 1rem;
+}
+
+.single-tags {
+  font-size: 1rem;
+}
+
+.tag-count {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+}
+
+hr.post-header-divider {
+  background-color: var(--code-border);
+}
+
+.toc ul {
+  list-style-type: none;
 }
