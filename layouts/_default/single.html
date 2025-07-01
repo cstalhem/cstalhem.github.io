@@ -40,11 +40,8 @@
 
             {{- if .Params.categories }}
               &nbsp; · &nbsp;
-              {{- range $index, $category := .Params.categories }}
-                {{- if $index }}, {{ end }}
-                {{- with $.Site.GetPage (printf "/categories/%s" $category) }}
-                  <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
-                {{- end }}
+              {{- with $.Site.GetPage (printf "/categories/%s" .Params.categories) }}
+                <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
               {{- end }}
             {{- end }}
             </p>
