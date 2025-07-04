@@ -1,0 +1,38 @@
+<div class="post-line">
+
+  {{ $dateFormat := "2 Jan 2006"}}
+  {{ with .Site.Params.listDateFormat }}
+    {{ $dateFormat = .}}
+  {{ end }}
+
+  <p class="line-date">{{ .Date | time.Format $dateFormat }} </p>
+
+  <div>
+      <p class="line-title">
+          <a href="{{ .RelPermalink }}">
+              {{ .Title }}
+          </a>
+      </p>
+
+      <div class="category-tags">
+        {{ $categories := .GetTerms "categories" }}
+        {{ if $categories }}
+          <a class="category" href="{{ (index $categories 0).RelPermalink }}">{{ (index $categories 0).LinkTitle }}</a>
+          &nbsp; · &nbsp;
+        {{ end }}
+
+        {{ $tags := .GetTerms "tags" }}
+        {{ if $tags }}
+          {{ range $i, $tag := $tags }}
+            {{- if $i }}&nbsp;{{ end -}}
+            <a class="tag" href="{{ $tag.RelPermalink }}">#{{ $tag.Name }}</a>
+          {{ end }}
+        {{ end }}
+      </div>
+
+      {{ if .Site.Params.listSummaries }}
+      <p class="line-summary"> {{ .Summary }} </p>
+      {{ end }}
+
+  </div>
+</div>
