@@ -13,7 +13,7 @@ Based on analysis of the Hugo site at http://localhost:1313, here are the key is
 - `<h1>Carl's Blog</h1>` (site title, keep as H1)
 - `<h2>Latest posts</h2>` (section heading, change to H2)
 
-### 2. **Navigation Structure** ✗
+### 2. **Navigation Structure** DONE
 **Issue:** Navigation links are wrapped in `<p>` tags instead of proper navigation markup.
 
 **Fix:** Use semantic navigation:
