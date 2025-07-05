@@ -12,7 +12,7 @@ params:
   homeIntroContent: ""
   homeCollectionTitle: "Latest posts"
   homeCollection: "posts"
-  paginationSize: 10
+  paginationSize: 50
   listSummaries: true
   listDateFormat: "Jan 2, 2006"
   breadcrumbs:
