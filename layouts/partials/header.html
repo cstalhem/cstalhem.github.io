@@ -9,20 +9,21 @@
     </h1>
 
     <nav class="header-menu">
+      <ul>
         {{ $currentPage := . }}
 
         {{ with site.Params.menu }}
         {{ range . }}
 
-        <p
-            class="small {{ if eq .name (lower $currentPage.Name) }} bold {{end}}">
+          <li class="small {{ if eq .name (lower $currentPage.Name) }} bold {{end}}">
             <a href="{{ .url }}" {{ if and (isset . "newTab") .newTab
                 }}target="_blank" rel="noopener noreferrer" {{ end }}>
                 /{{.name }}
             </a>
-        </p>
+          </li>
         {{ end }}
         {{ end }}
+      </ul>
     </nav>
 
     {{ end }}

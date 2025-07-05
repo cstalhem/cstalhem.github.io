@@ -38,6 +38,27 @@ a:hover {
   color: var(--accent-color);
 }
 
+/* ======= Header overried styles ======= */
+
+.header-menu > ul {
+  list-style-type: none;
+  margin-left: 0;
+  display: flex;
+  flex-direction: row;
+
+  li {
+    margin-left: 0.75rem;
+  }
+
+  li:first-child {
+    margin-left: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
 /* ======= Post list overried styles ======= */
 
 .post-line {
