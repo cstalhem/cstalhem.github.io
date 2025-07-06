@@ -71,6 +71,7 @@ a:hover {
   }
 
   .line-title {
+    font-size: large;
     font-family: var(--font-family-headings);
     margin-bottom: calc(var(--p-margin-bottom) * 0.25);
   }

@@ -28,7 +28,7 @@ Based on analysis of the Hugo site at http://localhost:1313, here are the key is
 </nav>
 ```
 
-### 3. **Generic Containers** ✗
+### 3. **Generic Containers** DONE
 **Issue:** Many `<div>` elements should be semantic HTML5 elements.
 
 **Fix:** Use semantic structure:
