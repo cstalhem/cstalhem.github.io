@@ -2,7 +2,6 @@ backend:
   name: github
   repo: cstalhem/cstalhem.github.io
   branch: main
-  use_graphql: true
   base_url: https://sveltia-cms-auth.carl-649.workers.dev/
 
 # These settings are required for Decap CMS to work properly
@@ -12,8 +11,6 @@ display_url: https://cstalhem.github.io
 media_folder: static/images
 public_folder: /images
 
-locale: en
-search: false
 slug:
   encoding: "unicode"
   clean_accents: true
@@ -23,6 +20,7 @@ collections:
   - name: posts
     label: Blog Posts
     label_singular: Post
+    icon: Article
     create: true
     folder: content/posts
     path: "{{year}}/{{month}}/{{day}}/{{slug}}"
@@ -102,9 +100,11 @@ collections:
           modes: [raw, rich_text],
           required: true,
         }
+  - divider: true
   - name: "tags"
     label: "Tags"
     label_singular: "Tag"
+    icon: Label
     create: true
     folder: content/tags
     path: "{{title}}/_index"
@@ -113,6 +113,7 @@ collections:
   - name: "categories"
     label: "Categories"
     label_singular: "Category"
+    icon: Category
     create: true
     folder: content/categories
     path: "{{title}}/_index"
