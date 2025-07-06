@@ -10,9 +10,9 @@ hideBackToTop: false
 categories: TIL
 tags:
   - Claude Code
-  - MCP
   - Generative AI
   - Simon Willison
+  - Model Context Protocol
 showTags: true
 ---
 Today on [Simon Willisons blog](https://simonwillison.net/2025/Jul/1/using-playwright-mcp-with-claude-code) I read about how to use the **Playwright** MCP-server with Claude Code.
