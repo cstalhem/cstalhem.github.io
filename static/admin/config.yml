@@ -4,7 +4,7 @@ backend:
   branch: main
   base_url: https://sveltia-cms-auth.carl-649.workers.dev/
 
-# These settings are required for Decap CMS to work properly
+# These settings are required for Sveltia CMS to work properly
 site_url: https://cstalhem.github.io
 display_url: https://cstalhem.github.io
 
