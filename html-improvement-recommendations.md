@@ -4,14 +4,14 @@ Based on analysis of the Hugo site at http://localhost:1313, here are the key is
 
 ## Critical Issues
 
-### 1. **Multiple H1 Tags** ✗
+### 1. **Multiple H1 Tags** DONE
 **Issue:** There are two H1 tags on the homepage:
 - "Carl's Blog" (header/banner)
 - "Latest posts" (main content)
 
 **Fix:** Use proper heading hierarchy:
-- `<h1>Carl's Blog</h1>` (site title, keep as H1)
-- `<h2>Latest posts</h2>` (section heading, change to H2)
+- `<h1>Carl's Blog</h1>` (site title, change to simple a-tag)
+- `<h2>Latest posts</h2>` (section heading, change to H1)
 
 ### 2. **Navigation Structure** DONE
 **Issue:** Navigation links are wrapped in `<p>` tags instead of proper navigation markup.
