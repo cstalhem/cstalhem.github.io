@@ -8,7 +8,16 @@
     {{ .Content }}
 
     {{ $tagsPage := eq .Kind "taxonomy" }}
+    {{ $taxonomyTermsPage := .Data.Terms }}
 
+    {{ if $taxonomyTermsPage }}
+    
+    {{ range .Data.Terms.ByCount }}
+    {{ partial "tag-entry.html" . }}
+    {{ end }}
+    
+    {{ else }}
+    
     {{ $paginationSize := 1}}
     {{ if (gt .Site.Params.paginationSize 0) }}
     {{ $paginationSize = .Site.Params.paginationSize }}
@@ -27,6 +36,8 @@
     {{ end }}
 
     {{ partial "pagination-controls.html" $paginator}}
+    
+    {{ end }}
 
 </div>
 {{ end }}
