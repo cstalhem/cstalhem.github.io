@@ -2,13 +2,12 @@
 title: Context Engineering is the better Prompt Engineering
 draft: false
 date: 2025-07-01T20:22:00
-summary: The term Context Engineering describes the "art and science" of the
-  actual work better than "Prompt Engineering"
+summary: The term Context Engineering describes the "art and science" of the actual work better than "Prompt Engineering"
 toc: false
 readTime: true
 autonumber: false
 hideBackToTop: false
-categories: Notes
+categories: Posts
 tags:
   - Context Engineering
   - Simon Willison
@@ -17,7 +16,6 @@ tags:
   - LLMs
 showTags: true
 ---
-
 Simon Willison writes on [his blog](https://simonwillison.net/2025/Jun/27/context-engineering/#atom-everything) that he is warming to the idea of using the term **Context Engineering** in favour of Prompt Engineering.
 
 As he writes himself on why Prompt Engineering is falling out of favour:
