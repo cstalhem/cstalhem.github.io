@@ -7,7 +7,7 @@ toc: false
 readTime: true
 autonumber: false
 hideBackToTop: false
-categories: Notes
+categories: Posts
 tags:
   - MCP
   - Simon Willison
