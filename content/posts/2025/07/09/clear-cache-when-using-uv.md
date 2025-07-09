@@ -7,7 +7,7 @@ toc: false
 readTime: true
 autonumber: false
 hideBackToTop: false
-categories: TIL
+categories: Notes
 tags:
   - Simon Willison
   - Python
