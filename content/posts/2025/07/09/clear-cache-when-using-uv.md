@@ -10,6 +10,8 @@ hideBackToTop: false
 categories: TIL
 tags:
   - Simon Willison
+  - Python
+  - UV
 showTags: true
 ---
 Originally from Simon Willison, who had 30+ GB of space cleaned up from his hard drive by running this:
