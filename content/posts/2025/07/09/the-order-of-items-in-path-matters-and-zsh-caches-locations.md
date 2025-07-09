@@ -1,6 +1,6 @@
 ---
 title: The order of items in $PATH matters, and ZSH caches locations
-draft: true
+draft: false
 date: 2025-07-09T16:33:00
 summary: When trying to update Git to the latest version using Homebrew, realised this when I didn't get the new git to work.
 toc: false
@@ -8,7 +8,9 @@ readTime: true
 autonumber: false
 hideBackToTop: false
 categories: TIL
-tags: []
+tags:
+  - Homebrew
+  - ZShell
 showTags: true
 ---
 Today I realised that the order of paths in the $PATH variable actually matters. Earlier items take precedence over later ones (which itself is counterintuitive for me...).
