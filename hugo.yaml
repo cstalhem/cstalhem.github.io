@@ -1,8 +1,13 @@
-baseURL: "https://cstalhem.github.io"
+baseURL: "https://cstalhem.github.io/"
+canonifyURLs: true
 languageCode: "en-us"
 title: "Carl's Blog"
 theme: "typo"
 timeZone: "Europe/Stockholm"
+sitemap:
+  changefreq: "weekly"
+  filename: "sitemap.xml"
+  priority: 0.5
 
 params:
   description: "A blog to keep track of things i do, learn, and want to remember"
