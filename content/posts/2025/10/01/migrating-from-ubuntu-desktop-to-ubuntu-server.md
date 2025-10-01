@@ -14,6 +14,7 @@ tags:
   - pi-hole
   - Homebrew
   - dns
+  - Ubuntu
 showTags: true
 ---
 My Ubuntu version (24.10) was not an LTS-version and updates stopped recently.
